@@ -1,0 +1,124 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tw.edu.ntubimd.formosa.taiwan.taipei.Information">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:shrinkColumns="5"
+            android:stretchColumns="5"
+            android:visibility="invisible"
+            android:background="@color/md_white_1000"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp">
+
+            <TableRow
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/icon_address"
+                    android:id="@+id/imageView" />
+
+                <TextView
+                    android:id="@+id/textViewAddress"
+                    android:text="Not Found"
+                    android:textSize="15dp"
+                    android:layout_margin="2dp"
+                    android:paddingLeft="15dp"
+                    android:layout_column="5"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/icon_opentime"
+                    android:id="@+id/imageView4" />
+                <TextView
+                    android:id="@+id/textViewOpentime"
+                    android:text="Not Found"
+                    android:textSize="15dp"
+                    android:paddingLeft="15dp"
+                    android:layout_margin="2dp"
+                    android:layout_column="5"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/icon_tel"
+                    android:id="@+id/imageView2" />
+
+                <TextView
+                    android:id="@+id/textViewTels"
+                    android:text="Not Found"
+                    android:paddingLeft="15dp"
+                    android:layout_margin="2dp"
+                    android:textSize="15dp"
+                    android:layout_column="5"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/icon_parking"
+                    android:id="@+id/imageView3" />
+
+                <TextView
+                    android:id="@+id/textViewParking"
+                    android:text="Not Found"
+                    android:paddingLeft="15dp"
+                    android:layout_margin="2dp"
+                    android:textSize="15dp"
+                    android:layout_column="5"/>
+
+            </TableRow>
+        </TableLayout>
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+</FrameLayout>

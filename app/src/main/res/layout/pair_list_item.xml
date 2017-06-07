@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/md_white_1000"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/textViewPair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Pair"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/textViewProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品名稱：" />
+
+        <TextView
+            android:id="@+id/textViewUserProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/textViewPreferentialType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品優惠：" />
+
+        <TextView
+            android:id="@+id/textViewUserPreferentialType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/textViewShopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="店家名稱：" />
+
+        <TextView
+            android:id="@+id/textViewUserShopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/textViewPairAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="店家地址：" />
+
+        <TextView
+            android:id="@+id/textViewUserPairAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/textViewPairTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="發起時間：" />
+
+        <TextView
+            android:id="@+id/textViewUserPairTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text" />
+
+    </LinearLayout>
+
+</LinearLayout>

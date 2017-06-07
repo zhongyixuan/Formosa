@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_now_pair_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tw.edu.ntubimd.formosa.drawer.pair.NowPairDetailActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/md_white_1000"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewPairAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="店家地址："
+                android:textColor="@color/md_black_1000"
+                android:textSize="9pt" />
+
+            <TextView
+                android:id="@+id/textViewUserPairAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_black_1000"
+                android:textSize="9pt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewShopName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="店家名稱："
+                android:textColor="@color/md_black_1000"
+                android:textSize="9pt" />
+
+            <TextView
+                android:id="@+id/textViewUserShopName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_black_1000"
+                android:textSize="9pt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品名稱："
+                android:textColor="@color/md_black_1000"
+                android:textSize="9pt" />
+
+            <TextView
+                android:id="@+id/textViewUserProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_black_1000"
+                android:textSize="9pt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品價格："
+                android:textColor="@color/md_black_1000"
+                android:textSize="9pt" />
+
+            <TextView
+                android:id="@+id/textViewUserProductPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_black_1000"
+                android:textSize="9pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewPreferentialType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品優惠："
+                android:textColor="@color/md_black_1000"
+                android:textSize="9pt" />
+
+            <TextView
+                android:id="@+id/textViewUserPreferentialType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_black_1000"
+                android:textSize="9pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewUserFeature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="發起人特徵："
+                android:textColor="@color/md_black_1000"
+                android:textSize="9pt" />
+
+            <TextView
+                android:id="@+id/textViewUserUserFeature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_black_1000"
+                android:textSize="9pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewPairTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="配對日期："
+                android:textColor="@color/md_black_1000"
+                android:textSize="9pt" />
+
+            <TextView
+                android:id="@+id/textViewShowPairTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_black_1000"
+                android:textSize="9pt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewWaitTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="等待時間："
+                android:textColor="@color/md_black_1000"
+                android:textSize="9pt" />
+
+            <TextView
+                android:id="@+id/textViewUserWaitTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_black_1000"
+                android:textSize="9pt" />
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/mapFragment"
+            class="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+</LinearLayout>

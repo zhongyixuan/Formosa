@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tw.edu.ntubimd.formosa">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".weather.WeatherService"
+            android:label="@string/app_name" />
+        <service
+            android:name=".drawer.pair.carpool.CarpoolService"
+            android:label="@string/app_name" />
+
+        <activity android:name=".taiwan.taipei.TaipeiActivity" />
+        <activity android:name=".taiwan.taipei.TaipeiActivityClick" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAvPRJNHvv2IOxKWocs5mTu8Y1VESBtA6s" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".drawer.LoginActivity" />
+        <activity android:name=".taiwan.taipei.hotel.HotelClickActivity" />
+        <activity android:name=".MemberMainActivity" />
+        <activity android:name=".drawer.RegisterActivity" />
+        <activity android:name=".drawer.PuzzleActivity" />
+        <activity android:name=".drawer.pair.PairActivity" />
+        <activity android:name=".drawer.pair.BOGOActivity" />
+        <activity android:name=".drawer.pair.AddPairActivity" />
+        <activity android:name=".drawer.pair.AllPairDetailActivity" />
+        <activity android:name=".drawer.pair.MyPairDetailActivity" />
+        <activity android:name=".drawer.pair.NowPairDetailActivity" />
+        <activity android:name=".PopularActivity" />
+        <activity android:name=".drawer.travel.TravelActivity" />
+        <activity android:name=".drawer.travel.AddTravelActivity" />
+        <activity android:name=".drawer.travel.DayCountyActivity" />
+        <activity android:name=".drawer.travel.SelectActivity" />
+        <activity android:name=".drawer.travel.TimeActivity" />
+        <activity android:name=".drawer.travel.TravelDetailActivity" />
+        <activity
+            android:name=".taiwan.taipei.MemberTaipeiActivityClick"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".taiwan.taipei.hotel.MemberHotelClickActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".drawer.ReservationActivity" />
+        <activity android:name=".drawer.pair.carpool.CarpoolActivity" />
+        <activity android:name=".drawer.pair.carpool.AllCarpoolDetailActivity" />
+        <activity android:name=".drawer.pair.carpool.AddCarpoolActivity" />
+        <activity android:name=".drawer.pair.carpool.OwnerCarpoolActivity" />
+        <activity android:name=".drawer.pair.carpool.MyCarpoolOwnerActivity" />
+        <activity android:name=".drawer.CarpoolPairUserInfoActivity" />
+        <activity android:name=".drawer.CarpoolPairUserInfoDetailActivity" />
+        <activity android:name=".taiwan.taipei.hotel.MemberHotelOrderActivity" />
+        <activity android:name=".drawer.CollectionActivity"></activity>
+    </application>
+
+</manifest>

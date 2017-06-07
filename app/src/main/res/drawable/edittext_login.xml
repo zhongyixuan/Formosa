@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- 填充的顏色 -->
+    <solid android:color="#6AA3A0" />
+
+    <!-- 設置矩形的四個角為弧形 -->
+    <!-- radius為弧形的半徑 -->
+    <corners android:radius="2dip" />
+
+    <!-- 設置padding -->
+    <padding
+        android:bottom="5dp"
+        android:left="5dp"
+        android:right="5dp"
+        android:top="5dp" />
+
+</shape>
